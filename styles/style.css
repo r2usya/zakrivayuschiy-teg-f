@@ -17,11 +17,11 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
-  background: var(--background-color);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--background-color);
   color: var(--accent-color);
   background-size: cover;
-  background: var(--background-image);
+  background-image: var(--background-image);
   line-height: normal;
 }
 .header {
@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   inline-size: clamp(375px, 48.34%, 796px);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, sans-serif);
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
 }
@@ -58,14 +58,11 @@
   outline: none;
 }
 
-.theme-menu__button:disabled {
-  opacity: 0.6;
-}
 .card {
   background-color: var(--background-color);
   inline-size: clamp(375px, 48.34%, 796px);
   margin: 0 auto 54px;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font, sans-serif);
   display: flex;
   flex-direction: column;
   border: 2px solid var(--accent-color);
@@ -103,7 +100,7 @@
   z-index: 1;
   font-size: 14px;
   font-weight: var(--text-font-weight);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, sans-serif);
   mix-blend-mode: difference;
   color: var(--button-color);
 }
@@ -118,7 +115,7 @@
   font-size: 14px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, sans-serif);
   font-weight: var(--accent-font);
 
   text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color), 1px 0 var(--background-color) 0 -1px var(--background-color);
@@ -339,13 +336,13 @@ button {
 .dialig-text {
   line-height: 150%;
   text-transform: uppercase;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, sans-serif);
   max-width: clamp(12.375rem, 10.768rem + 4.286vw, 14.625rem);
 }
 .dialog-button {
   line-height: 90%;
   text-transform: uppercase;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, sans-serif);
   padding: 9px 17px;
   border: 2px solid var(--accent-color);
   width: clamp(13.938rem, 12.33rem + 4.286vw, 16.188rem);
