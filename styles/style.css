@@ -23,6 +23,7 @@
   background-size: cover;
   background-image: var(--background-image);
   line-height: normal;
+  font-variation-settings:"wght" var(--text-font-weight);
 }
 .header {
   margin: 102px auto 104px;
