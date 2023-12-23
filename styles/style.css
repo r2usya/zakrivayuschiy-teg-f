@@ -49,11 +49,10 @@
 .h1 {
   margin-bottom: 25px;
   font-size: clamp(0.875rem, 0.473rem + 1.071vw, 1.438rem);
-  font-size: clamp(0.875rem, 0.473rem + 1.071vw, 1.438rem);
   font-style: normal;
-font-weight: var(--text-font-weight);
-line-height: normal;
-text-transform: uppercase;
+  font-weight: var(--text-font-weight);
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .theme-menu {
@@ -421,12 +420,12 @@ button {
 }
 
 @media (max-width: 500px) {
-  .send-button{
+  .send-button {
       display: flex;
       flex-direction: column;
   }
 
-  .send{
+  .send {
       width: 28px;
       height: 28px;
   }
