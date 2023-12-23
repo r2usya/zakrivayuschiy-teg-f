@@ -12,3 +12,91 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes triang {
+    from {
+        left: 0;
+    }
+  
+    to {
+        left: 4px;
+    }
+  }
+  .card__icon-button:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-out 0s;
+
+  }
+  .card__icon-button:hover .core {
+    fill: var(--accent-color);
+    transition: fill 0.3s ease-out 0s;
+
+  }
+
+  .card__icon-button .core {
+    transition: fill 0.3s ease-out 0.03s;
+  }
+
+  .card__icon-button:hover .main-body {
+    fill: var(--accent-color);
+    transition: fill 0.3s ease-out 0.05s;
+  }
+
+  .card__icon-button .main-body {
+    fill: var(--background-color);
+    transition: fill 0.3s ease-out 0s;
+  }
+
+  .card__icon-button:active .core {
+    fill: var(--heart-filling-red);
+    transition: fill 0.3s ease-out 0s;
+  }
+  
+  .card__icon-button:active .main-body {
+    fill: var(--heart-filling-red);
+    transition: fill 0.3s ease-out 0.05s;
+  }
+  
+  .like-icon.is-liked .core {
+    fill: var(--heart-filling-red);
+    transition: fill 0.3s ease-out 0.06s;
+  }
+
+  .like-icon.is-liked .main-body {
+    fill: var(--heart-filling-red);
+    transition: fill 0.3s ease-out 0.06s;
+  }
+
+  .like-icon.is-liked .contour {
+    fill: var(--heart-filling-red);
+    transition: fill 0.3s ease-out 0.06s;
+  }
+  
+  @keyframes heart {
+    from {
+        scale: 1;
+        transform-origin: center;
+    }
+  
+    to {
+        scale: 1.5;
+        transform-origin: center;
+    }
+  }
+
+  .like-icon.is-liked .heart {
+    animation: heart 0.1s alternate ease-in 0.3s;
+  }
+  
+  @keyframes stars {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .like-icon.is-liked .sparks {
+    animation: stars 0.3s alternate ease-in 0.3s;
+  }
