@@ -323,7 +323,8 @@ button {
   max-width: 357px;
   padding-inline: 30px;
   padding-block: 30px;
-  background-color:var(--background-color)
+  background-color:var(--background-color);
+  border:2px solid var(--accent-color);
 }
 
 .dialog-send {
@@ -429,8 +430,4 @@ button {
       width: 28px;
       height: 28px;
   }
-}
-
-.dialog{
-  border:2px solid var(--accent-color);
 }
