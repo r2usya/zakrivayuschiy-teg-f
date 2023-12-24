@@ -430,3 +430,7 @@ button {
       height: 28px;
   }
 }
+
+.dialog{
+  border:2px solid var(--accent-color);
+}
